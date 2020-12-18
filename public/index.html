@@ -1,0 +1,144 @@
+<!-- 
+# Name: Life Circle v.1.0.0 
+# Description: (Practice project) Simple landing page 
+# Tools: Tailwind CSS v.2, jQuery
+# Tag: postcss, node, build, tailwind.config.js etc
+# Designed by: Md. Rezwan Saki Alin (https://www.alinsworld.com)
+# Date: 19-Dec-2020
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwindcss 2.0</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+
+<body>
+
+    <!-- main container -->
+    <div>
+        <header class="sticky top-0">
+            <div class="flex justify-between bg-yellow-50 p-4 shadow-lg">
+                <!-- logo -->
+                <div class="flex">
+                    <img class="w-7 h-7" src="images/logo.svg" alt="logo">
+                    <h3
+                        class="pl-2 text-lg font-semibold text-gray-700 hover:text-green-800 transition duration-200 ease-in-out">
+                        <a href="#">Life
+                            Circle</a>
+                    </h3>
+                </div>
+
+                <!-- menu -->
+                <div>
+                    <!-- toggle menu icon -->
+                    <a class="nav-toggler" data-target="#navigation" href="#">
+                        <svg class="h-8 text-gray-700 hover:text-green-900 transition duration-200 ease-in-out sm:hidden md:hidden"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </a>
+
+                    <!-- navigation menu -->
+                    <ul id="navigation" class="sm:flex md:flex sm:flex-row md:flex-row lg:flex-row flex-col hidden">
+                        <li><a class="pr-5 font-medium text-gray-900 hover:text-green-900 transition duration-200 ease-in-out"
+                                href="#">Home</a>
+                        </li>
+                        <li><a class="pr-5 font-medium text-gray-900 hover:text-green-900 transition duration-200 ease-in-out"
+                                href="#">About</a>
+                        </li>
+                        <li><a class="pr-5 font-medium text-gray-900 hover:text-green-900 transition duration-200 ease-in-out"
+                                href="#">Portfolio</a></li>
+                        <li><a class="pr-5 font-medium text-gray-900 hover:text-green-900 transition duration-200 ease-in-out"
+                                href="#">Blog</a>
+                        </li>
+                        <li><a class="pr-5 font-medium text-gray-900 hover:text-green-900 transition duration-200 ease-in-out"
+                                href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- main  -->
+        <main>
+            <!-- hero section -->
+            <div class="fex-col w-screen bg-gray-700 py-8 px-4 text-center">
+                <h2 class="pt-4 text-6xl text-white text-center">Life Circle</h2>
+                <h3 class="text-3xl text-blue-200 text-center">all about life</h3>
+                <p class="py-4 text-lg text-gray-100 text-center">
+                    Your time is limited, so don't waste it living
+                    someone else's
+                    life.
+                </p>
+                <button
+                    class="text-yellow-100 text-sm ring-1 ring-white px-4 py-2 mt-5 rounded-full hover:bg-white hover:text-gray-800 font-semibold transition duration-500 ease-in-out">
+                    Join Now
+                </button>
+            </div>
+
+            <div
+                class="sm:flex md:flex sm:flex-col md:flex-col lg:flex lg:flex-row flex flex-col items-center sm:px-12 sm:py-14 md:px-12 md:py-14 px-8 py-8">
+                <p class="text-justify sm:pr-12 md:pr-12 text-gray-700 font-medium">
+                    “This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal
+                    truth. But the good part is you get to decide how you're going to mess it up. Girls will be your
+                    friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with
+                    you through everything - they're your true best friends. Don't let go of them. Also remember,
+                    sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby,
+                    I hate to say it, most of them - actually pretty much all of them are going to break your heart, but
+                    you can't give up because if you give up, you'll never find your soulmate. You'll never find that
+                    half who makes you whole and that goes for everything. Just because you fail once, doesn't mean
+                    you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in
+                    yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up,
+                    and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile
+                    about.”
+                    <span class="text-gray-400 font-semibold">― Marilyn Monroe</span>
+                </p>
+                <img class="h-60" src="./images/life_images.jpg" alt="life_images">
+            </div>
+
+            <div class="px-12 py-14 sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row gap-8">
+                <!-- card -->
+                <div class="bg-blue-100 shadow-md px-12 py-8 mb-8 rounded-lg flex flex-col items-center">
+                    <img class="w-32 h-32 rounded-full mb-4 ring-2 ring-white" src="./images/life_images.jpg" alt="">
+                    <h3 class="font-medium text-gray-700">Life Quote</h3>
+                    <h3 class="text-sm mt-2">"The greatest glory in living lies not in never falling, but in rising
+                        every time we fall." <span class="text-gray-500 text-sm">-Nelson Mandela</span></h3>
+                </div>
+                <!-- card -->
+                <div class="bg-blue-100 shadow-md px-12 py-8 mb-8 rounded-lg flex flex-col items-center">
+                    <img class="w-32 h-32 rounded-full mb-4 ring-2 ring-white" src="./images/quote2.jpg" alt="">
+                    <h3 class="font-medium text-gray-700">Life Quote</h3>
+                    <h3 class="text-sm mt-2">"Your time is limited, so don't waste it living someone else's life. Don't
+                        be trapped by dogma – which is living with the results of other people's thinking."<span
+                            class="text-gray-500 text-sm">-Steve Jobs</span></h3>
+                </div>
+                <!-- card -->
+                <div class="bg-blue-100 shadow-md px-12 py-8 mb-8 rounded-lg flex flex-col items-center">
+                    <img class="w-32 h-32 rounded-full mb-4 ring-2 ring-white" src="./images/quote3.jpg" alt="">
+                    <h3 class="font-medium text-gray-700">Life Quote</h3>
+                    <h3 class="text-sm mt-2">"Life is a dream for the wise, a game for the fool, a comedy for the rich,
+                        a tragedy for the poor."<span class="text-gray-500 text-sm">-Sholom Aleichem</span></h3>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="px-12 py-4 bg-gray-900 w-screen sm:mt-12 md:mt-12 text-gray-500 flex flex-col items-center">
+                <h3 class="text-sm">Copyright © 2020 Life Circle | All Rights Reserved </h3>
+            </div>
+        </footer>
+    </div>
+    <!-- main container -->
+
+    <!-- javascript file -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
