@@ -1,5 +1,6 @@
-### Tailwind CSS v.2 Setup 
-This is a full basic and first step project to help another project. Actually this is a format or setup like a template.
+### Life Circle by Tailwind
+Simple landing page...
+My first tailwind css practice work... 
 
 ### How to use:
     1. Download this project from GitHub
